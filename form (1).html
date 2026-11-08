@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buku Tamu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+<a class="brand" href="#beranda"><span class="brand-mark">S<span>3</span></span><span class="brand-name">SUMBER 3<small>WATERFALL</small></span></a>
+<button class="hamburger" id="hamburger" aria-label="Buka menu">☰</button>
+    <nav id="navMenu">
+        <a href="welcome.html">Beranda</a>
+        <a href="profile.html">Profil</a>
+        <a href="gallery.html">Galeri</a>
+        <a href="form.html">Buku Tamu</a>
+    </nav>
+</header>
+
+<section class="page-heading">
+    <div class="page-heading-inner">
+        <p class="eyebrow">04 — YOUR EXPERIENCE MATTERS</p>
+        <h1>Buku Tamu</h1>
+        <p class="page-sub">Bagikan pengalaman dan kesanmu setelah mengunjungi wisata kami.</p>
+    </div>
+</section>
+
+<section class="guestbook-section">
+    <form id="guestbookForm" class="guestbook">
+
+        <label>Nama Lengkap</label>
+        <input type="text" name="nama" placeholder="Masukkan nama lengkap" required>
+
+        <label>Email</label>
+        <input type="email" name="email" placeholder="Masukkan email" required>
+
+        <label>Asal Daerah</label>
+        <input type="text" name="asal" placeholder="Contoh: Malang">
+
+        <label>Usia</label>
+        <input type="number" name="usia" min="1" placeholder="Masukkan usia">
+
+        <label>Tujuan Kunjungan</label>
+        <select name="tujuan" required>
+            <option value="">Pilih tujuan</option>
+            <option>Berlibur</option>
+            <option>Berfoto</option>
+            <option>Bersama Keluarga</option>
+            <option>Lainnya</option>
+        </select>
+
+        <label>Dengan Siapa Kamu Berkunjung?</label>
+        <div class="choice">
+            <label><input type="radio" name="teman" value="Sendiri" required> Sendiri</label>
+            <label><input type="radio" name="teman" value="Keluarga"> Keluarga</label>
+            <label><input type="radio" name="teman" value="Teman"> Teman</label>
+        </div>
+
+        <label>Aktivitas yang Dilakukan</label>
+        <div class="choice">
+            <label><input type="checkbox" name="aktivitas" value="Berfoto"> Berfoto</label>
+            <label><input type="checkbox" name="aktivitas" value="Bersantai"> Bersantai</label>
+            <label><input type="checkbox" name="aktivitas" value="Menikmati Alam"> Menikmati Alam</label>
+        </div>
+
+        <label>Pesan dan Kesan</label>
+        <textarea name="pesan" rows="5" placeholder="Tuliskan pesan dan kesanmu..." required></textarea>
+
+        <div class="form-buttons">
+            <button type="submit" class="btn">Kirim</button>
+            <button type="reset" class="btn btn-light">Reset</button>
+        </div>
+
+        <p id="formMessage"></p>
+    </form>
+    <div class="next-section">
+    <a href="gallery.html" class="btn btn-light">← Kembali ke Galeri</a>
+    <a href="index.html" class="btn">Kembali ke Awal ↑</a>
+</div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
