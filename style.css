@@ -120,7 +120,7 @@ nav a:hover {
     max-height: none;
     background:
         linear-gradient(90deg, rgba(8,27,20,.82), rgba(10,30,23,.2)),
-        url("Img/hero.jpg") center/cover no-repeat;
+        url("img/hero.jpg") center/cover no-repeat;
     display: flex;
     align-items: center;
     padding: 0 48px;
