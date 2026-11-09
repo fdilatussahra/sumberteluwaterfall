@@ -657,6 +657,8 @@ h1 em,h2 em{
   font-weight: 600;
   text-align: center;
   color: var(--green);
+  line-height: 1.6;
+  min-height: 0;
 }
 
 @media (max-width: 1200px){
@@ -909,4 +911,4 @@ h1 em,h2 em{
     max-height: none;
     border-radius: 0;
   }
-        }
+}
